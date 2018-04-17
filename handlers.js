@@ -44,10 +44,7 @@ exports.queryHandler = (authorizer, app, type, time, timetype, measures) => {
             type: type,
           }
         })
-        const modifiedrows = JSON.stringify(rows)
-        console.log({
-          'rows':modifiedrows
-        })
+        console.log(JSON.stringify({'rows':rows}))
       }
     })
 }
