@@ -9,16 +9,10 @@ Usage example:
 
 where:
 
-appleid = username
-
-password = password
-
-app = Integer found in My Apps -> App -> Apple ID.
-
-type = metrics
-
-time = Numeric value of years or days
-
-timetype = Type of time value, "years" or "days"
-
-measure = available values: installs, sessions, pageViews, activeDevices, crashes, payingUsers, units, sales, iap (in app purchases), impressions, impressionsUnique
+* appleid = username
+* password = password
+* app = Integer found in My Apps -> App -> Apple ID.
+* type = metrics
+* time = Numeric value of years or days
+* timetype = Type of time value, "years" or "days"
+* measure = available values: installs, sessions, pageViews, activeDevices, crashes, payingUsers, units, sales, iap (in app purchases), impressions, impressionsUnique
