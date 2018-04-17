@@ -1,4 +1,3 @@
-//const express = require('express')
 const itc = require('itunesconnectanalytics')
 const program = require('commander')
 
@@ -12,8 +11,6 @@ program.option('--time [time]', 'first parameter of json table, number')
 program.option('--timetype [timetype]', 'second parameter of json table, for example years, days,')
 program.option('--measure [measure]', 'json table')
 program.parse(process.argv);
-//program.option('--host [host]', 'host to listen')
-//program.option('--port [port]', 'port to listen')
 
 const appleId = program.appleId || process.env.APPLE_ID
 const password = program.password || process.env.PASSWORD
@@ -22,8 +19,6 @@ const type = program.type || process.env.TYPE
 const time = program.time || process.env.TIME
 const timetype = program.timetype || process.env.TIMETYPE
 const measure = program.measure || process.env.MEASURE
-//const host = program.host || process.env.HOST || '0.0.0.0'
-//const port = program.port || process.env.PORT || 3000
 
 const authorizer = () => {
   return new itc.Itunes(appleId, password,
