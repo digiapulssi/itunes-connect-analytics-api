@@ -29,7 +29,7 @@ const authorizer = () => {
   return new itc.Itunes(appleId, password,
   {
     errorCallback: (e) => {
-      //console.log('Error logging in: ' + e);
+      console.log('Error logging in: ' + e);
     },
     successCallback: (d) => {
       //console.log('Logged in');
